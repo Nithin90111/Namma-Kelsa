@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme using Material3 -->
+    <style name="Theme.NammaKelsa" parent="Theme.Material3.DayNight.NoActionBar" tools:ignore="Typos">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Splash / launch theme (no action bar, solid background) -->
+    <style name="Theme.NammaKelsa.Splash" parent="Theme.NammaKelsa" tools:ignore="Typos">
+        <item name="android:windowBackground">@color/color_primary</item>
+    </style>
+
+</resources>

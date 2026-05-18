@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">Namma Kelsa</string>
+
+    <!-- Auth -->
+    <string name="label_phone_number">Phone Number</string>
+    <string name="hint_phone_number">+91 XXXXX XXXXX</string>
+    <string name="btn_send_otp">Send OTP</string>
+    <string name="label_otp">Enter OTP</string>
+    <string name="hint_otp">6-digit code</string>
+    <string name="btn_verify_otp">Verify</string>
+    <string name="msg_otp_sent">OTP sent successfully</string>
+    <string name="error_invalid_phone">Please enter a valid phone number</string>
+    <string name="error_invalid_otp">Invalid OTP. Please try again.</string>
+    <string name="msg_lockout">Too many attempts. Try again in %1$s minutes.</string>
+
+    <!-- Registration / Profile -->
+    <string name="label_name">Full Name</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="label_skill">Select Skill</string>
+    <string name="label_daily_rate">Daily Rate (₹)</string>
+    <string name="hint_daily_rate">e.g. 500</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_save">Save</string>
+    <string name="error_name_empty">Name cannot be empty</string>
+    <string name="error_name_too_long">Name must be 100 characters or fewer</string>
+    <string name="error_skill_empty">Please select a skill</string>
+    <string name="error_rate_invalid">Enter a valid positive amount in INR</string>
+    <string name="error_photo_required">Profile photo is required</string>
+    <string name="msg_profile_updated">Profile updated successfully</string>
+    <string name="msg_gallery_limit_reached">Gallery can hold a maximum of 3 photos</string>
+
+    <!-- Skill types -->
+    <string name="skill_painting">Painting</string>
+    <string name="skill_tiling">Tiling</string>
+    <string name="skill_plumbing">Plumbing</string>
+    <string name="skill_electrical">Electrical</string>
+    <string name="skill_gardening">Gardening</string>
+    <string name="skill_carpentry">Carpentry</string>
+
+    <!-- Worker Home -->
+    <string name="label_availability">Available Today</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+
+    <!-- Search -->
+    <string name="label_search_skill">Select a skill</string>
+    <string name="label_radius">Distance</string>
+    <string name="radius_1km">1 km</string>
+    <string name="radius_2km">2 km</string>
+    <string name="radius_5km">5 km</string>
+    <string name="radius_10km">10 km</string>
+    <string name="msg_no_workers">No workers available in this area for the selected skill.</string>
+    <string name="msg_location_required">Location access is required for distance-based search.</string>
+    <string name="btn_open_settings">Open Settings</string>
+
+    <!-- Worker Profile View -->
+    <string name="label_daily_rate_display">₹%1$d / day</string>
+    <string name="label_distance_display">%1$.1f km away</string>
+    <string name="btn_call">Call</string>
+    <string name="error_calling_not_supported">Calling is not supported on this device.</string>
+    <string name="gallery_photo_content_description">Gallery photo</string>
+
+    <!-- General -->
+    <string name="error_network">Network error. Please check your connection and try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+    <string name="error_timeout">Request timed out. Please try again.</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phoneEntryFragment">
+
+    <!-- ==================== AUTH FLOW ==================== -->
+
+    <fragment
+        android:id="@+id/phoneEntryFragment"
+        android:name="com.nammakelsa.ui.auth.PhoneEntryFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_phone_entry">
+        <action
+            android:id="@+id/action_phoneEntry_to_otpVerification"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.nammakelsa.ui.auth.OtpVerificationFragment"
+        android:label="Verify OTP"
+        tools:layout="@layout/fragment_otp_verification">
+        <argument
+            android:name="verificationId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_otpVerification_to_registration"
+            app:destination="@id/registrationFragment"
+            app:popUpTo="@id/phoneEntryFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_otpVerification_to_workerHome"
+            app:destination="@id/workerHomeFragment"
+            app:popUpTo="@id/phoneEntryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.nammakelsa.ui.worker.RegistrationFragment"
+        android:label="Create Profile"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registration_to_workerHome"
+            app:destination="@id/workerHomeFragment"
+            app:popUpTo="@id/phoneEntryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ==================== MAIN FLOW ==================== -->
+
+    <fragment
+        android:id="@+id/workerHomeFragment"
+        android:name="com.nammakelsa.ui.worker.WorkerHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_worker_home">
+        <action
+            android:id="@+id/action_workerHome_to_profileEdit"
+            app:destination="@id/workerProfileEditFragment" />
+        <action
+            android:id="@+id/action_workerHome_to_customerSearch"
+            app:destination="@id/customerSearchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workerProfileEditFragment"
+        android:name="com.nammakelsa.ui.worker.WorkerProfileEditFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_worker_profile_edit">
+        <action
+            android:id="@+id/action_profileEdit_to_workerHome"
+            app:destination="@id/workerHomeFragment"
+            app:popUpTo="@id/workerHomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customerSearchFragment"
+        android:name="com.nammakelsa.ui.customer.CustomerSearchFragment"
+        android:label="Find Workers"
+        tools:layout="@layout/fragment_customer_search">
+        <action
+            android:id="@+id/action_customerSearch_to_workerProfileView"
+            app:destination="@id/workerProfileViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workerProfileViewFragment"
+        android:name="com.nammakelsa.ui.customer.WorkerProfileViewFragment"
+        android:label="Worker Profile"
+        tools:layout="@layout/fragment_worker_profile_view">
+        <argument
+            android:name="workerId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

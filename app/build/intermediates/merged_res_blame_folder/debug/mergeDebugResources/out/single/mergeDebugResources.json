@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_phone_entry.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_phone_entry.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_worker_profile_edit.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_worker_profile_edit.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_item_gallery_photo.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/item_gallery_photo.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/drawable_bg_circle_outline.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/drawable/bg_circle_outline.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_activity_main.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/drawable_ic_person_placeholder.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/drawable/ic_person_placeholder.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/navigation_nav_graph.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_worker_home.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_worker_home.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_otp_verification.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_otp_verification.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_registration.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_registration.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_item_worker_card.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/item_worker_card.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_customer_search.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_customer_search.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/layout_fragment_worker_profile_view.xml.flat",
+        "source": "com.nammakelsa.app-main-60:/layout/fragment_worker_profile_view.xml"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.nammakelsa.app-debug-58:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.nammakelsa.app-main-60:/mipmap-mdpi/ic_launcher.webp"
+    }
+]

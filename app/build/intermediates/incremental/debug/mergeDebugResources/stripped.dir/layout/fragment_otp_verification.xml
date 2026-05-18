@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_primary"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter the 6-digit code sent to your phone"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_secondary"
+            android:gravity="center" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- OTP input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilOtp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="6-digit OTP"
+            app:boxStrokeColor="@color/color_primary"
+            app:hintTextColor="@color/color_text_secondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:textColor="@color/color_text_primary"
+                android:textSize="20sp"
+                android:letterSpacing="0.3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Error message -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_error"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <!-- Lockout countdown -->
+        <TextView
+            android:id="@+id/tvLockoutCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_error"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <!-- Verify button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerify"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_verify_otp"
+            android:textSize="16sp"
+            android:textColor="@color/color_on_primary"
+            android:backgroundTint="@color/color_primary"
+            android:paddingVertical="14dp" />
+
+        <!-- Progress bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:indeterminateTint="@color/color_primary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

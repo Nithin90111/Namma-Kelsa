@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <!-- ProgressBar (shown while loading, centered) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/color_primary"
+        android:visibility="gone" />
+
+    <!-- Error TextView (shown on load failure) -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingHorizontal="32dp"
+        android:textColor="@color/color_error"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.4"
+        android:visibility="gone" />
+
+    <!-- Scrollable content (shown on success) -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/contentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp">
+
+            <!-- Profile photo (circular, 120dp) -->
+            <ImageView
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_person_placeholder"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle_outline"
+                android:clipToOutline="true"
+                android:contentDescription="Worker profile photo" />
+
+            <!-- Worker name (large text) -->
+            <TextView
+                android:id="@+id/tvWorkerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_text_primary"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="" />
+
+            <!-- Skill badge Chip (non-clickable, orange) -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSkillBadge"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:checkable="false"
+                app:chipBackgroundColor="@color/color_primary"
+                app:chipStrokeWidth="0dp"
+                android:textColor="@color/color_on_primary"
+                android:textSize="13sp"
+                android:text="" />
+
+            <!-- Daily rate -->
+            <TextView
+                android:id="@+id/tvDailyRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_text_primary"
+                android:text="" />
+
+            <!-- Location label -->
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/color_text_secondary"
+                android:text="" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/color_outline" />
+
+            <!-- Call button (full width, green/primary, with phone icon) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_call"
+                android:textSize="16sp"
+                android:textColor="@color/color_on_primary"
+                android:backgroundTint="@color/color_success"
+                android:paddingVertical="14dp"
+                app:icon="@android:drawable/ic_menu_call"
+                app:iconGravity="textStart"
+                app:iconTint="@color/color_on_primary" />
+
+            <!-- Work Gallery section title -->
+            <TextView
+                android:id="@+id/tvGalleryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Work Gallery"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_text_primary" />
+
+            <!-- Gallery horizontal container (up to 3 photos, 100dp x 100dp each) -->
+            <LinearLayout
+                android:id="@+id/galleryContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

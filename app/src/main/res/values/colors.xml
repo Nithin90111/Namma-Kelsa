@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="color_primary">#FF6B35</color>       <!-- Orange -->
+    <color name="color_primary_dark">#E55A24</color>  <!-- Darker orange for status bar -->
+    <color name="color_secondary">#2C3E50</color>     <!-- Dark blue -->
+    <color name="color_background">#FFFFFF</color>    <!-- White -->
+
+    <!-- Surface / container colors -->
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_on_background">#1C1B1F</color>
+
+    <!-- Semantic colors -->
+    <color name="color_error">#B3261E</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_success">#2E7D32</color>
+
+    <!-- Text colors -->
+    <color name="color_text_primary">#1C1B1F</color>
+    <color name="color_text_secondary">#49454F</color>
+    <color name="color_text_hint">#79747E</color>
+
+    <!-- Divider / outline -->
+    <color name="color_outline">#CAC4D0</color>
+</resources>

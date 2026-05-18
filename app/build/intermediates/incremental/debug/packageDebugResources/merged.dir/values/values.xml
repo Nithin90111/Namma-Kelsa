@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="color_background">#FFFFFF</color>
+    <color name="color_error">#B3261E</color>
+    <color name="color_on_background">#1C1B1F</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_outline">#CAC4D0</color>
+    <color name="color_primary">#FF6B35</color>
+    <color name="color_primary_dark">#E55A24</color>
+    <color name="color_secondary">#2C3E50</color>
+    <color name="color_success">#2E7D32</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_text_hint">#79747E</color>
+    <color name="color_text_primary">#1C1B1F</color>
+    <color name="color_text_secondary">#49454F</color>
+    <dimen name="gallery_photo_margin">8dp</dimen>
+    <dimen name="gallery_photo_size">100dp</dimen>
+    <string name="app_name" ns1:ignore="Typos">Namma Kelsa</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="btn_open_settings">Open Settings</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_send_otp">Send OTP</string>
+    <string name="btn_verify_otp">Verify</string>
+    <string name="error_calling_not_supported">Calling is not supported on this device.</string>
+    <string name="error_invalid_otp">Invalid OTP. Please try again.</string>
+    <string name="error_invalid_phone">Please enter a valid phone number</string>
+    <string name="error_name_empty">Name cannot be empty</string>
+    <string name="error_name_too_long">Name must be 100 characters or fewer</string>
+    <string name="error_network">Network error. Please check your connection and try again.</string>
+    <string name="error_photo_required">Profile photo is required</string>
+    <string name="error_rate_invalid">Enter a valid positive amount in INR</string>
+    <string name="error_skill_empty">Please select a skill</string>
+    <string name="error_timeout">Request timed out. Please try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+    <string name="gallery_photo_content_description">Gallery photo</string>
+    <string name="gcm_defaultSenderId" translatable="false">000000000000</string>
+    <string name="google_api_key" translatable="false">PLACEHOLDER_API_KEY</string>
+    <string name="google_app_id" translatable="false">1:000000000000:android:0000000000000000000000</string>
+    <string name="google_crash_reporting_api_key" translatable="false">PLACEHOLDER_API_KEY</string>
+    <string name="google_storage_bucket" translatable="false">namma-kelsa-placeholder.appspot.com</string>
+    <string name="hint_daily_rate">e.g. 500</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_otp">6-digit code</string>
+    <string name="hint_phone_number">+91 XXXXX XXXXX</string>
+    <string name="label_availability">Available Today</string>
+    <string name="label_daily_rate">Daily Rate (₹)</string>
+    <string name="label_daily_rate_display">₹%1$d / day</string>
+    <string name="label_distance_display">%1$.1f km away</string>
+    <string name="label_name">Full Name</string>
+    <string name="label_otp">Enter OTP</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_radius">Distance</string>
+    <string name="label_search_skill">Select a skill</string>
+    <string name="label_skill">Select Skill</string>
+    <string name="msg_gallery_limit_reached">Gallery can hold a maximum of 3 photos</string>
+    <string name="msg_location_required">Location access is required for distance-based search.</string>
+    <string name="msg_lockout">Too many attempts. Try again in %1$s minutes.</string>
+    <string name="msg_no_workers">No workers available in this area for the selected skill.</string>
+    <string name="msg_otp_sent">OTP sent successfully</string>
+    <string name="msg_profile_updated">Profile updated successfully</string>
+    <string name="project_id" translatable="false">namma-kelsa-placeholder</string>
+    <string name="radius_10km">10 km</string>
+    <string name="radius_1km">1 km</string>
+    <string name="radius_2km">2 km</string>
+    <string name="radius_5km">5 km</string>
+    <string name="skill_carpentry">Carpentry</string>
+    <string name="skill_electrical">Electrical</string>
+    <string name="skill_gardening">Gardening</string>
+    <string name="skill_painting">Painting</string>
+    <string name="skill_plumbing">Plumbing</string>
+    <string name="skill_tiling">Tiling</string>
+    <style name="Theme.NammaKelsa" parent="Theme.Material3.DayNight.NoActionBar" ns1:ignore="Typos">
+        
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+        
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        
+        <item name="colorError">@color/color_error</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.NammaKelsa.Splash" parent="Theme.NammaKelsa" ns1:ignore="Typos">
+        <item name="android:windowBackground">@color/color_primary</item>
+    </style>
+</resources>
